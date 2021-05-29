@@ -1,0 +1,63 @@
+
+.page-draw{
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding:  60px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.color-picker-div{
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.color-picker-circle{
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 50%;
+}
+
+.color-picker-div .color-picker{
+  position: absolute;
+  top: -5px;
+  left: 105%; 
+  z-index: 2;
+}
+
+.size-picker-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.size-picker-div .size-picker-option{
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 50%;
+}
+
+.draw-tools-div{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 500px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.canvas-div{
+  position: relative;
+}
+
+.canvas{
+  border: 2px solid rgb(184, 184, 184);
+  z-index: 1;
+}
+
+.canvas-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
